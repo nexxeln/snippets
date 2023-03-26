@@ -9,7 +9,7 @@ import {
 export default defineConfig({
   presets: [
     presetUno(),
-    presetWebFonts({ provider: "fontshare", fonts: { sans: "Switzer" } }),
+    presetWebFonts({ provider: "bunny", fonts: { mono: "DM Mono" } }),
   ],
   transformers: [transformerDirectives(), transformerVariantGroup()],
 });

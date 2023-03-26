@@ -1,5 +1,9 @@
 ---
+import { getCollection } from "astro:content";
 import Head from "../components/Head.astro";
+import Snippet from "../components/Snippet.astro";
+
+const entries = await getCollection("snippets");
 ---
 
 <html lang="en">
@@ -8,8 +12,18 @@ import Head from "../components/Head.astro";
     description="nexxel likes these code snippets"
   />
   <body>
-    <div class="bg-#0e0e0e p-8 rounded">
-      <h1>Astro</h1>
+    <h1 class="text-2xl font-black pt-4 pb-10">nexxel | snippets</h1>
+    <div class="flex flex-col gap-y-6 px-4">
+      {
+        entries.map(({ data: { description, tags, title }, slug }) => (
+          <Snippet
+            description={description}
+            tags={tags}
+            title={title}
+            slug={slug}
+          />
+        ))
+      }
     </div>
   </body>
 </html>

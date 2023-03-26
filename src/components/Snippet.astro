@@ -1,0 +1,31 @@
+---
+export interface Props {
+  title: string;
+  description: string;
+  slug: string;
+  tags: string[];
+}
+
+const { title, description, slug, tags } = Astro.props;
+---
+
+<div
+  class="flex flex-col bg-#0e0e0e rounded-md p-4 text-left border-(1 #e5e5e5 opacity-10)"
+>
+  <a href={`/${slug}`} class="pb-3">
+    <span class="text-lg md:text-xl font-bold opacity-90">{title}</span>
+  </a>
+
+  <p class="text-base md:text-lg opacity-80 pb-3">{description}</p>
+
+  <div class="flex gap-2 opacity-50 font-light text-sm md:text-base">
+    <span>Tags:</span>
+    {
+      tags.map((tag) => (
+        <a href={`/tags/${tag}`} class="underline underline-offset-4 ">
+          {tag}
+        </a>
+      ))
+    }
+  </div>
+</div>

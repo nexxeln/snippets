@@ -1,3 +1,7 @@
+html {
+  --at-apply: "font-mono";
+}
+
 body {
-  --at-apply: "bg-#050505";
+  --at-apply: "bg-#050505 text-#e5e5e5 flex flex-col items-center h-screen text-center";
 }
