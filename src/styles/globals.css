@@ -1,7 +1,33 @@
 html {
-  --at-apply: "font-mono";
+  color-scheme: dark;
+  margin-left: calc(100vw - 100%);
+  margin-right: 0;
 }
 
 body {
-  --at-apply: "bg-#050505 text-#e5e5e5 flex flex-col items-center h-screen text-center";
+  --at-apply: "font-mono bg-#050505 text-#e5e5e5 flex flex-col items-center h-screen text-center";
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+  word-wrap: break-word;
+  width: 100%;
+}
+
+h1 {
+  --at-apply: "font-black text-(4xl neutral-100 left) py-6";
+}
+
+h2 {
+  --at-apply: "font-extrabold text-(2xl left neutral-100)";
+}
+
+h3 {
+  --at-apply: "font-bold text-(xl left neutral-100)";
+}
+
+pre {
+  --at-apply: "font-mono bg-#0e0e0e rounded-md p-4 text-left border-(1 #e5e5e5 opacity-10) my-6";
+}
+
+p {
+  --at-apply: "my-6 text-left opacity-80";
 }

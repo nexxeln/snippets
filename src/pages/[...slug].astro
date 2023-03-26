@@ -20,5 +20,8 @@ const { Content } = await entry.render();
 ---
 
 <Head title={entry.data.title} description={entry.data.description} />
-<h1>{entry.data.title}</h1>
-<Content />
+<div class="px-4 w-full md:w-3/5">
+  <h2 class="pt-6">{entry.data.title}</h2>
+
+  <Content />
+</div>

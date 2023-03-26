@@ -8,11 +8,11 @@ const entries = await getCollection("snippets");
 
 <html lang="en">
   <Head
-    title="nexxel | snippets"
+    title="nexxel • snippets"
     description="nexxel likes these code snippets"
   />
   <body>
-    <h1 class="text-2xl font-black pt-4 pb-10">nexxel | snippets</h1>
+    <h1 class="text-2xl font-black pt-4 pb-10">nexxel • snippets</h1>
     <div class="flex flex-col gap-y-6 px-4">
       {
         entries.map(({ data: { description, tags, title }, slug }) => (
