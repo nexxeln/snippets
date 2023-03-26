@@ -1,8 +1,7 @@
 ---
-import type { AstroComponentFactory } from "astro/dist/runtime/server";
+import type { InferGetStaticPropsType } from "astro";
 import { getCollection } from "astro:content";
 
-import type { Snippet } from "../content/config";
 import Head from "../components/Head.astro";
 
 export async function getStaticPaths() {
@@ -14,13 +13,7 @@ export async function getStaticPaths() {
   }));
 }
 
-interface Props {
-  entry: {
-    body: string;
-    data: Snippet;
-    render(): Promise<{ Content: AstroComponentFactory }>;
-  };
-}
+type Props = InferGetStaticPropsType<typeof getStaticPaths>;
 
 const { entry } = Astro.props;
 const { Content } = await entry.render();
