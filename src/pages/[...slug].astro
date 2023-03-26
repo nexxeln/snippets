@@ -1,5 +1,6 @@
 ---
 import { getCollection } from "astro:content";
+import Head from "../components/Head.astro";
 
 export async function getStaticPaths() {
   const snippets = await getCollection("snippets");
@@ -13,5 +14,6 @@ const { entry } = Astro.props;
 const { Content } = await entry.render();
 ---
 
+<Head title={entry.data.title} description={entry.data.description} />
 <h1>{entry.data.title}</h1>
 <Content />

@@ -1,5 +1,6 @@
 ---
 title: "Reverse A List Without Mutation"
+description: "OCaml function to reverse a list without mutation"
 tags: ["OCaml", "FP"]
 ---
 
