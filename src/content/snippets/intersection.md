@@ -15,7 +15,7 @@ const intersection = <T>(x: T[], y: T[]): T[] => [...new Set(y)].filter((v) => n
 ## Working
 
 ```ts
-intersection([1, 2, 3, 2, 5, 3], [2, 2, 2, 2, 4, 5]);;
+intersection([1, 2, 3, 2, 5, 3], [2, 2, 2, 2, 4, 5]);
 // sets created  [2, 3, 5] [2, 4, 5]
 // filtered [2, 5]
 // [2, 5]
