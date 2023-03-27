@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  --at-apply: "font-mono bg-#050505 text-#e5e5e5 flex flex-col items-center h-screen text-center";
+  --at-apply: "font-sans bg-#050505 text-#e5e5e5 flex flex-col items-center h-screen text-center";
   text-rendering: optimizeLegibility;
   scroll-behavior: smooth;
   word-wrap: break-word;
@@ -25,9 +25,17 @@ h3 {
 }
 
 pre {
-  --at-apply: "font-mono bg-#0e0e0e rounded-md p-4 text-left border-(1 #e5e5e5 opacity-10) my-6";
+  --at-apply: "rounded-md p-4 text-left border-(1 #e5e5e5 opacity-10) my-6";
+}
+
+pre code {
+  --at-apply: "font-mono";
 }
 
 p {
-  --at-apply: "my-6 text-left opacity-80";
+  --at-apply: "my-6 text-left";
+}
+
+p code {
+  --at-apply: "font-mono bg-#0e0e0e p-1 rounded-md border-(1 #e5e5e5 opacity-10) text-#d6b4b4";
 }
