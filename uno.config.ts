@@ -11,7 +11,7 @@ export default defineConfig({
     presetUno(),
     presetWebFonts({
       provider: "bunny",
-      fonts: { mono: "Inconsolata", sans: "Karla" },
+      fonts: { mono: "IBM Plex Mono", sans: "Karla" },
     }),
   ],
   transformers: [transformerDirectives(), transformerVariantGroup()],

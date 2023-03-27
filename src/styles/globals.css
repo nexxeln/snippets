@@ -13,29 +13,29 @@ body {
 }
 
 h1 {
-  --at-apply: "font-black text-(4xl neutral-100 left) py-6";
+  --at-apply: "font-black text-(4xl #aac9d4 left) py-6";
 }
 
 h2 {
-  --at-apply: "font-extrabold text-(2xl left neutral-100)";
+  --at-apply: "font-extrabold text-(2xl left #aac9d4)";
 }
 
 h3 {
-  --at-apply: "font-bold text-(xl left neutral-100)";
+  --at-apply: "font-bold text-(xl left #aac9d4)";
 }
 
-pre {
+.content pre {
   --at-apply: "rounded-md p-4 text-left border-(1 #e5e5e5 opacity-10) my-6";
 }
 
-pre code {
+.content pre code {
   --at-apply: "font-mono";
 }
 
-p {
-  --at-apply: "my-6 text-left";
+.content p {
+  --at-apply: "my-6 text-left leading-8.25";
 }
 
-p code {
+.content p code {
   --at-apply: "font-mono bg-#0e0e0e p-1 rounded-md border-(1 #e5e5e5 opacity-10) text-#d6b4b4";
 }

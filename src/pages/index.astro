@@ -12,13 +12,13 @@ const entries = await getCollection("snippets");
     description="nexxel likes these code snippets"
   />
   <body>
-    <h1 class="text-2xl font-black pt-4 pb-10">nexxel • snippets</h1>
+    <h1 class="text-(2xl #e5e5e5) font-black pt-4 pb-10">nexxel • snippets</h1>
     <div class="flex flex-col gap-y-6 px-4">
       {
-        entries.map(({ data: { description, tags, title }, slug }) => (
+        entries.map(({ data: { description, language, title }, slug }) => (
           <Snippet
             description={description}
-            tags={tags}
+            language={language}
             title={title}
             slug={slug}
           />
